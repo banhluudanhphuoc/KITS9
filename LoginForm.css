@@ -1,0 +1,137 @@
+
+body{
+  background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+display: flex;
+  border-radius: 30px;
+  background-color: #f1f1f1;
+  height: 650px;
+  width: 1280px;
+ 
+}
+
+
+.left{
+  height: 10px;
+  width: 35%;
+  margin: 60px;
+
+}
+
+
+
+.login{
+  text-align: center;
+}
+.login-button{
+  background-color: rgb(226, 106, 126);
+  color: white;
+  border-radius: 40px;
+  height: 50px;
+  width: 150px;
+
+}
+.google-button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: azure;
+  color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.google-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.github-button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: azure;
+  color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.github-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.facebook-button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: azure;
+  color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.continue-with{
+  padding: 20px;
+  text-align: center;
+}
+
+.facebook-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.login-other{
+  text-align: center;
+}
+
+.sign-up{
+  text-align: center;
+}
+
+
+
+.img{
+  display: flex;
+  justify-content: space-between;
+}
+
+.person{
+width: 500px;
+height: 480px;
+z-index: 1;
+margin-right: 30px;
+margin-top: 80px;
+}
+
+.plant{
+z-index: 1;
+width: 100px;
+height: 80px;
+padding-top: 70px;
+margin-right: 100px;
+
+}
+
+
+.img-background{
+  border-radius: 30px;
+  background-color: #c0dbea;
+  position: absolute;
+  height: 650px;
+  width: 500px;
+  float: right;
+  top: 140px;
+  right: 290px;
+}
+
+
+
+

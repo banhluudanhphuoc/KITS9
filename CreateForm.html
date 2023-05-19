@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Edit</title>
+    <link rel="stylesheet" href="CreateForm.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebar-bg">
+            <div class="sidebar__item">
+                <a href=""><img src="./image/logo@0 1.png" alt=""></a>
+                <a href=""><img src="./image/Vector.png" alt=""></a>
+                <a href=""><img src="./image/Vector (1).png" alt=""></a>
+                <a href=""><img src="./image/Vector (9).png" alt=""></a>
+                <a href=""><img src="./image/Vector (2).png" alt=""></a>
+                <a href=""><img src="./image/Vector (3).png" alt=""></a>
+            </div>
+            <div class="sidebar__setting">
+                <a href=""><img src="./image/Vector (10).png" alt=""></a>
+            </div>
+        </div>
+        <div class="subSidebar">
+            <div class="subSidebar__item">
+                <li class="back">
+                    <div class="wrapper__img">
+                        <img class="img__back" src="./image/Vector (11).png" alt="">
+                    </div>
+                    <span>settings</span>
+                </li>
+                <li>
+                    <div class="wrapper__img">
+                        <img src="./image/Vector (4).png" alt="">
+                    </div>
+                    <span>Edit profile</span>
+                </li>
+                <li>
+                    <div class="wrapper__img">
+                        <img src="./image/Vector (5).png" alt="">
+                    </div>
+                    <span>Notification</span>
+                </li>
+                <li>
+                    <div class="wrapper__img">
+                        <img src="./image/Vector (6).png" alt="">
+                    </div>
+                    <span>Security</span>
+                </li>
+                <li>
+                    <div class="wrapper__img">
+                        <img src="./image/Vector (7).png" alt="">
+                    </div>
+                    <span>Appearance</span>
+                </li>
+                <li>
+                    <div class="wrapper__img">
+                        <img src="./image/Vector (8).png" alt="">
+                    </div>
+                    <span>Help</span>
+                </li>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content__header">
+                <div class="btn__showSubSidebar">
+                    <img class="img__showSubSidebar" src="./image/Vector 2.png" alt="">
+                </div>
+                <div class="content__header-title">
+                    Edit profile
+                </div>
+                <div class="content__header-logo">
+                    <img src="./image/logo@0 1.png" alt="">
+                    <button type="button" class="btn btn-danger" id="logout">Log Out</button>
+                </div>
+            </div>
+            <div class="content__form">
+                <div class="form__control">
+                    <div class="form__inline">
+                        <label for="">First Name</label>
+                        <input type="text" placeholder="Phuoc">
+                    </div>
+                    <div class="form__inline">
+                        <label for="">Last Name</label>
+                        <input type="text" placeholder="Banh">
+                    </div>
+                </div>
+                <div class="form__group">
+                    <label for="">Email</label>
+                    <input id="form-email" type="text" placeholder="example@email.com">
+                    <input id="checkbox" type="checkbox" name="">
+                </div>
+                <div class="form__group">
+                    <label for="">Address</label>
+                    <input type="text" placeholder="51 Thành Thái">
+                </div>
+                <div class="form__group">
+                    <label for="">Contact Number</label>
+                    <input type="text" placeholder="0976316345">
+                </div>
+                <div class="form__group">
+                    <label for="">City</label>
+                    <select name="" id="">
+                        <option value="">Ho Chi Minh</option>
+                        <option value="">Da Lat</option>
+                        <option value="">Ha Noi</option>
+                    </select>
+                </div>
+                <div class="form__btn">
+                    <button type="button">Cancel</button>
+                    <button type="button">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="content__header-title">
+        Edit profile
+        <button id="logout" >logout</button>
+    </div> -->
+</body>
+
+<!-- <script>
+    const btnShow = document.querySelector('.btn__showSubSidebar');
+    const imgShow = document.querySelector('img.img__showSubSidebar');
+    const subSidebar = document.querySelector('.subSidebar');
+    btnShow.addEventListener('click', () => {
+        if(subSidebar.style.display == 'none') {
+            subSidebar.style.display = 'block'
+            imgShow.src = './image/Vector (11).png'
+            subSidebar.classList.toggle('enter')
+        } else {
+            subSidebar.style.display = 'none'
+            imgShow.src = './image/Vector 2.png'
+            subSidebar.classList.toggle('enter')
+        }
+    })
+
+</script> -->
+<script src="Java Script/server.js"></script>
+
+
+</html>

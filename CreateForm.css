@@ -1,0 +1,327 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: 'Open Sans',serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.container {
+    width: 80%;
+    margin: 5% auto;
+    border: 2px solid #b45a10;
+    display: flex;
+}
+.sidebar, .subSidebar {
+    padding: 2rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.subSidebar__item, .sidebar, .sidebar__item {
+    display: flex;
+    flex-direction: column;
+}
+.sidebar__item, .subSidebar__item {
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar__item > a {
+    display: flex;
+    align-items: center;
+}
+.sidebar__item > a:first-child {
+    padding-bottom: 2rem;
+}
+.sidebar__item > a + a{
+    margin: 1.4rem 0;
+}
+.subSidebar__item li + li  {
+    margin-top: 1rem ;
+}
+.sidebar__setting {
+    width: 51px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #FF7008;;
+}
+.sidebar__setting img {
+    width: 22px;
+    height: 22px;
+}
+.sidebar-bg{
+    background-color: #FFC297;
+}
+
+/* SubSidebar */
+.subSidebar {
+    position: relative;
+    padding: 2rem 4rem 2rem 3rem;
+}
+.subSidebar::after {
+    content: '';
+    position: absolute;
+    width: 680px;
+    left: -69px;
+    top: 340px;
+    border: 1px solid #c9c9c9;
+    transform: rotate(90deg);
+}
+.subSidebar__item li {
+    width: 100%;
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #858585;
+    font-weight: 700;
+    cursor: pointer;
+}
+.subSidebar__item li:nth-child(1){
+    margin-left: -3.8rem;
+    color: #000;
+    font-weight: 900;
+    font-size: 20px;
+}
+.wrapper__img {
+    width: 60px !important;
+}
+.wrapper__img img {
+    max-width: 22px;
+}
+
+/* Content */
+.content {
+    padding: 3rem 10rem 3rem 3rem;
+    flex: 1;
+}
+.content__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.content .btn__showSubSidebar {
+    display: none;
+}
+.content__header-title {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.form__control {
+    display: flex;
+    justify-content: space-between;
+}
+.form__btn {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.form__btn button {
+    padding: 10px 4rem;
+    border-radius: 5px;
+}
+.form__btn button:nth-child(1) {
+    background: #FFFFFF;
+    border: 2px solid #FF7008;
+    color: #FF7008;
+}
+.form__btn button:nth-child(2) {
+    background: #FF7008;
+    color: #FFFFFF;
+    font-weight: 700;
+    border: none;
+}
+.form__control + .form__group {
+    margin-top: 1rem;
+}
+.form__group + .form__btn {
+    margin-top: 3rem;
+}
+.form__group, .form__inline {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+.form__group + .form__group {
+    margin-top: 1rem;
+}
+.form__inline, .form__group select {
+    width: 400px;
+}
+.form__group input, .form__inline input, .form__group select {
+    padding: 10px 1rem;
+    background: #FFFFFF;
+    border: 1px solid #858585;
+    border-radius: 5px;
+}
+.form__group label + input, .form__control label + input, .form__group label + select {
+    margin-top: 4px;
+}
+
+input#form-email {
+    position: relative;
+}
+input#checkbox {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 400px;
+    top: 390px;
+}
+input#checkbox:checked {
+    accent-color: #42a90d;
+}
+
+.active {
+    background-color: #42a90d;
+    color: #FFFFFF;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sidebar, .subSidebar {
+        padding: 2rem 4px;
+    }
+    .subSidebar {
+        position: relative;
+        padding: 1rem 1rem 1rem 2rem;
+    }
+    .subSidebar::after {
+        left: -150px;
+        width: 690px;
+        top: 345px;
+    }
+    
+    .content {
+        padding: 1rem;
+    }
+    .content__header {
+        margin-bottom: 1rem;
+    }
+
+    .form__control {
+        flex-direction: column;
+    }
+    .form__group select {
+        width: 100%;
+    }
+    .form__inline {
+        width: 100%;
+    }
+    .form__inline + .form__inline {
+        margin-top: 1rem;
+    }
+    .form__btn {
+        width: 100%;
+    }
+    .form__btn button {
+        padding: 10px 5rem;
+    }
+    .subSidebar__item li:nth-child(1) {
+        margin-left: -2.4rem;
+    }
+    .subSidebar__item li {
+        font-size: 16px;
+    }
+    input#checkbox {
+        right: 130px;
+        top: 344px;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 767px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .content__header {
+        margin-bottom: 1rem;
+    }
+    .sidebar, .subSidebar {
+        padding: 1rem 2px;
+    }
+    .sidebar__item > a img {
+        width: 30px;
+    }
+    .subSidebar {
+        position: relative;
+        padding: 6px 1rem;
+        display: none;
+        animation-duration: 0.5s;
+        animation-name: showSidebar;
+    }
+    @keyframes showSidebar {
+        0% {
+            opacity: 0;
+            left: -200px;
+        }
+        100% {
+            opacity: 1;
+            left: 0px;
+        }
+    }
+    .subSidebar__item li:nth-child(1) {
+        margin-left: 0;
+    }
+    .wrapper__img {
+        display: none;
+    }
+    .wrapper__img img {
+        max-width: 20px;
+    }
+    .subSidebar__item span {
+        font-size: 12px !important;
+    }
+    .subSidebar::after {
+        display: none;
+    }
+    .content {
+        padding: 6px;
+    }
+    .content .btn__showSubSidebar {
+        display: block;
+    }
+    .form__control {
+        flex-direction: column;
+    }
+    .form__inline {
+        width: 100%;
+    }
+    .form__inline + .form__inline {
+        margin-top: 1rem;
+    }
+    .form__btn {
+        width: 100%;
+    }
+    .btn-group button {
+        padding: 10px 5rem;
+    }
+    .form__group select {
+        width: 100%;
+    }
+    input#checkbox {
+        right: 15px;
+        top: 287px;
+    }
+}
+
+.subSidebar__item li.active {
+    font-weight: bold;
+}
